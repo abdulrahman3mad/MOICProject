@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 500px;
+        width: 500px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .landingpage-image {
+        background-image: url("images/landingpage-image.png");
+        height: 700px;
+        width: 1286px;
+        background-size: cover;
+        background-position: center -300px;
+        animation: image-animation 7s infinite both;
+    }
+
+    @keyframes image-animation {
+        from {
+            background-image: url("images/landingpage-image7.png");
+        }
+
+        to {
+            background-image: url("images/landingpage-image8.png");
+        }
+    }
+</style>
+
+<body>
+    <div class="landingpage-image"></div>
+
+</body>
+
+</html>

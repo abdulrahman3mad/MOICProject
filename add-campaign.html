@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+
+    <link rel="stylesheet" href="Css/Partials/navbar.css">
+    <link rel="stylesheet" href="Css/Partials/footer.css">
+    <link rel="stylesheet" href="Css/Partials/general-styles.css">
+    <link rel="stylesheet" href="Css/Partials/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Partials/all.min.css">
+    <link rel="stylesheet" href="Css/add-campaign.css">
+    <title>إضافة حملة</title>
+</head>
+
+<body>
+    <!--Start header-->
+    <header class="home-header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <a class="navbar-brand text-center" href="index.html"><img src="Images/Moic-logo.png" alt="Logo" />
+                </a>
+                <span class="logo-text"></span>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center " id="navbarNav">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item section-elements ">
+                            <a class="nav-link Home active-link " href="index.html">الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item section-elements">
+                            <a class="nav-link" href="articles.html">مقالاتنا</a>
+                        </li>
+
+                        <li class="nav-item publish section-elements">
+                            <a class="nav-link" href="gallery.html">المعرض</a>
+                        </li>
+
+                        <li class="nav-item publish section-elements">
+                            <a class="nav-link" href="write-article.html">اكتب</a>
+                        </li>
+                    </ul>
+
+                    <!--an anonymous user (doesn't login or signup yet)-->
+                    <ul class="list-unstyled  ">
+                        <li class="nav-item signup">
+                            <a class="nav-link" href="sign-up.html">إشتراك</a>
+                        </li>
+
+                    </ul>
+                    <!---->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End header-->
+    <!--Start add-campaign-form -->
+    <section>
+        <div class="container">
+            <form action="" method="POST">
+                <input type="file" name="campaign-img1" class="campaign-img1">
+                <input type="file" name="campaign-img2" class="campaign-img2">
+                <input type="file" name="campaign-img3" class="campaign-img3">
+                <input type="file" name="campaign-img4" class="campaign-img4">
+            </form>
+        </div>
+    </section>
+    <!--End add-campaign-form -->
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+            <section class="options">
+                <ul class="list-unstyled">
+                    <li class="active"><a href="">الرئيسية</a></li>
+                    <li><a href="WhoAreWe">من نحن</a></li>
+                    <li><a href="">اكتب معنا</a></li>
+                </ul>
+            </section>
+            <section class="social-media">
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                    <li><a href=""><i class="fab fa-soundcloud"></i></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</body>
+
+</html>

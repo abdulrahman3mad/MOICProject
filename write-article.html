@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+    <link rel="stylesheet" href="Css/Partials/navbar.css">
+    <link rel="stylesheet" href="Css/Partials/general-styles.css">
+    <link rel="stylesheet" href="Css/Partials/footer.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/Partials/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/form-style.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/b7m6nhp1vont8onhwbehopu9tvpwxum80kez4ct43vjn5gzt/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: "#content",
+            plugins: 'lists, link, textpattern ',
+            textpattern_patterns: [
+                { start: '#', format: 'h1' },
+                { start: '##', format: 'h2' },
+                { start: '###', format: 'h3' },
+                { start: '####', format: 'h4' },
+                { start: '#####', format: 'h5' },
+                { start: '######', format: 'h6' },
+                { start: '*', end: '*', format: 'italic' },
+                { start: '**', end: '**', format: 'bold' },
+                { start: '-', cmd: 'InsertUnorderedList' },
+                { start: '* ', cmd: 'InsertOrderedList' },
+                { start: '~', end: '~', cmd: 'createLink' },
+                { start: '---', replacement: '<hr/>' }
+            ],
+            fontsize_formats: "8pt 9pt 10pt 11pt 12pt 14pt 18pt 24pt 30pt 36pt 48pt",
+            content_style: "body{font-size:18pt;}",
+            toolbar: "undo redo | styleselect | bold italic | fontsizeselect | alignleft aligncenter alignright alignjustify | bullist numlist |forecolor backcolor| preview code | outdent indent",
+            menubar: false,
+        });
+    </script>
+    <title>اكتب</title>
+</head>
+
+<body>
+    <!--Start header-->
+    <header class="home-header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <div class="logo-indentity">
+                    <a class="navbar-brand text-center" href="index.html"><img src="Images/Logo.png" alt="Logo" />
+                    </a>
+                    <span class="tagline">خطوة لإحياء أمة</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <ul class="list-unstyled dropdown-list d-lg-none d-xs-block">
+
+                </ul>
+
+                <div class="collapse navbar-collapse text-center " id="navbarNav">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item section-elements ">
+                            <a class="nav-link Home active-link " href="index.html">الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item section-elements">
+                            <a class="nav-link" href="articles.html">مقالاتنا</a>
+                        </li>
+
+                        <li class="nav-item publish section-elements">
+                            <a class="nav-link" href="gallery.html">المعرض</a>
+                        </li>
+
+                        <li class="nav-item publish section-elements">
+                            <a class="nav-link" href="write-article.html">اكتب</a>
+                        </li>
+                    </ul>
+
+
+                    <!--an anonymous user (doesn't login or signup yet)-->
+                    <ul class="list-unstyled utilties">
+                        <li class="nav-item signup d-none">
+                            <a class="nav-link" href="sign-up.html">إشتراك</a>
+                        </li>
+                        <!--if he is signed in-->
+                        <li class="nav-item profile-icon d-lg-block d-none">
+                            <i class="fas fa-user"></i>
+                            <ul class="profile-dropdown-list inside-profile-dropdown-list list-unstyled d-none">
+                                <h2 class="user-name">نور</h2>
+                                <hr>
+                                <li><a href="profile.html">الصفحة الشخصية</a></li>
+                                <!--if he is an admin -->
+                                <li><a href="login.html">تسجيل خروج</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!---->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End header-->
+    <!--start form-->
+    <section class="form text-right">
+        <div class="container">
+            <header class="write-header">
+                <h1>اكتب</h1>
+            </header>
+            <hr>
+            <form action="Articles.html" method="POST">
+                <fieldset>
+                    <label for="article-title">عنوان المقال</label>
+                    <input type="text" id="article-title" name="article-title">
+                </fieldset>
+                <fieldset>
+                    <label for="article-cover">غلاف المقال</label>
+                    <input type="file" id="article-cover" name="article-cover" accept="image/png, image/jpeg">
+                </fieldset>
+                <fieldset>
+                    <label for="article-type">نوع المقال</label>
+                    <select name="article-type" id="article-type" class="article-type">
+                        <option value="أدبي"> أدبي</option>
+                        <option value="سياسة">سياسة</option>
+                        <option value="علوم">علوم</option>
+                        <option value="ثقافة">ثقافة</option>
+                        <option value="فنون">فنون</option>
+                    </select>
+                </fieldset>
+                <label for="content">المحتوى</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                <button type="submit">انشر</button>
+            </form>
+        </div>
+    </section>
+
+    <!--end form-->
+
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+            <div class="options">
+                <ul class="list-unstyled">
+                    <li class="active"><a href="">الرئيسية</a></li>
+                    <li><a href="WhoAreWe">من نحن</a></li>
+                    <li><a href="">اكتب معنا</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                    <li><a href=""><i class="fab fa-soundcloud"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/general-options.js"></script>
+</body>
+
+</html>

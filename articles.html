@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+    <link rel="stylesheet" href="Css/Partials/navbar.css">
+    <link rel="stylesheet" href="Css/Partials/footer.css">
+    <link rel="stylesheet" href="Css/articles.css">
+    <link rel="stylesheet" href="Css/Partials/general-styles.css">
+    <link rel="stylesheet" href="Css/Partials/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+
+    <title>Articles</title>
+</head>
+
+<body>
+    <!--Start header-->
+    <header class="home-header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <div class="logo-indentity">
+                    <a class="navbar-brand text-center" href="index.html"><img src="Images/Logo.png" alt="Logo" />
+                    </a>
+                    <span class="tagline">خطوة لإحياء أمة</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <ul class="list-unstyled dropdown-list d-lg-none d-xs-block">
+
+                </ul>
+
+                <div class="collapse navbar-collapse text-center " id="navbarNav">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item section-elements ">
+                            <a class="nav-link Home active-link " href="index.html">الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item section-elements">
+                            <a class="nav-link" href="articles.html">مقالاتنا</a>
+                        </li>
+
+                        <li class="nav-item publish section-elements">
+                            <a class="nav-link" href="gallery.html">المعرض</a>
+                        </li>
+
+                        <li class="nav-item publish section-elements">
+                            <a class="nav-link" href="write-article.html">اكتب</a>
+                        </li>
+                    </ul>
+
+
+                    <!--an anonymous user (doesn't login or signup yet)-->
+                    <ul class="list-unstyled utilties">
+                        <li class="nav-item signup d-none">
+                            <a class="nav-link" href="sign-up.html">إشتراك</a>
+                        </li>
+                        <!--if he is signed in-->
+                        <li class="nav-item profile-icon d-lg-block d-none">
+                            <i class="fas fa-user"></i>
+                            <ul class="profile-dropdown-list inside-profile-dropdown-list list-unstyled d-none">
+                                <h2 class="user-name">نور</h2>
+                                <hr>
+                                <li><a href="profile.html">الصفحة الشخصية</a></li>
+                                <!--if he is an admin -->
+                                <li><a href="login.html">تسجيل خروج</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!---->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End header-->
+    <!--Start Articles-->
+    <section class="articles-style">
+        <div class="container">
+            <header>
+                <h1 class="headline articles-header text-right">
+                    مقالاتنا
+                </h1>
+            </header>
+            <hr class="hr-article-style">
+            <form action="" method="GET" class="text-right search-form">
+                <fieldset>
+                    <label for="article-name">إسم المقال</label>
+                    <input type="text" id="article-name" name="article-name">
+                </fieldset>
+                <fieldset>
+                    <label for="article-type">نوع المقال</label>
+                    <input type="text" id="article-type" name="article-type">
+                </fieldset>
+                <button type="submit">بحث</button>
+            </form>
+            <section class="articles">
+                <div class="row ">
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article col-lg-4 col-md-12">
+                        <div class="content">
+                            <div class="row">
+                                <!--put article image here  !!!!-->
+                                <div class="article-image  col-12"
+                                    style="background-image: url(Images/نبيل،-توفيق.jpg)">
+                                </div>
+
+                                <div class="article-info col-12">
+                                    <span class=article-category>إصلاح</span>
+                                    <!--put article category here  !!!!-->
+                                    <header>
+                                        <h3 class="article-header">النبيل
+                                            <!--put article title here  !!!!-->
+                                            والعرَّاب:
+                                            جعلا الشباب
+                                            يقرأ
+                                        </h3>
+                                    </header>
+                                    <div class="writer-info">
+                                        <div class="writer-img">
+                                            <img src="images/abdo.jpg" alt="صورة الكاتب">
+                                        </div>
+                                        <h3>عبدالرحمن عماد</h3>
+                                    </div>
+                                    <div class="article-options">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="options-list d-none">
+                                            <form action="">
+                                                <button class="delete-button" type="submit"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="write-article.html" class="edit-article"><i
+                                                    class="fas fa-edit"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+            <a href="Article.html"><span class="see-more text-center">مشاهدة المزيد</span></a>
+        </div>
+    </section>
+    <!--End Articles-->
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+            <div class="options">
+                <ul class="list-unstyled">
+                    <li class="active"><a href="">الرئيسية</a></li>
+                    <li><a href="WhoAreWe">من نحن</a></li>
+                    <li><a href="">اكتب معنا</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                    <li><a href=""><i class="fab fa-soundcloud"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/general-options.js"></script>
+</body>
+
+</html>
